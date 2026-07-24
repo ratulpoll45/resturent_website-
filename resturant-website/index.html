@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Spice Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2 class="logo">Royal Spice</h2>
+             <div class="menu-toggle" id="menu-toggle">
+               ☰
+             </div>
+            <button id="themeBtn">🌙</button>
+
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking">Book Table</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h1>Welcome To Royal Spice</h1>
+
+            <p>
+                Taste the best food in town with fresh ingredients,
+                premium quality and unforgettable flavors.
+            </p>
+
+            <a href="#booking">
+
+                 <button>
+
+                  Book a Table
+
+                 </button>
+
+            </a>
+
+        </div>
+
+    </section>
+    <section id="booking" class="booking hidden">
+
+    <h2>Book a Table</h2>
+
+    <form id="bookingForm">
+
+        <input type="text" id="bookingName" placeholder="Your Name" required>
+
+        <input type="email" id="bookingEmail" placeholder="Your Email" required>
+
+        <input type="text" id="bookingPhone" placeholder="Phone Number" required>
+
+        <input type="date" id="bookingDate" required>
+
+        <input type="time" id="bookingTime" required>
+
+        <input type="number" id="bookingGuests" placeholder="Number of Guests" required>
+
+        <button type="submit">Book Now</button>
+
+    </form>
+
+</section>
+     <section id="about" class="about hidden">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+    </div>
+
+    <div class="about-content">
+
+        <h2>About Our Restaurant</h2>
+
+        <p>
+            Welcome to Royal Spice, where every meal is made with passion.
+            We use fresh ingredients, authentic recipes, and excellent service
+            to create an unforgettable dining experience.
+        </p>
+
+        <button>Read More</button>
+
+    </div>
+
+</section>
+<section id="menu" class="menu hidden">
+
+    <h2>Our Popular Menu</h2>
+
+    <div class="menu-container" id="menuContainer">
+
+       
+
+    </div>
+
+</section>
+<section id="gallery" class="gallery hidden">
+
+    <h2>Our Food Gallery</h2>
+
+    <div class="gallery-container">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Food">
+
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Food">
+
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Food">
+
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Food">
+
+    </div>
+
+</section>
+<section class="testimonials hidden">
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <h3>Rahul Sharma</h3>
+            <p>"Amazing food and excellent service. I will definitely visit again!"</p>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+        </div>
+
+        <div class="testimonial-card">
+            <h3>Priya Das</h3>
+            <p>"Beautiful atmosphere and delicious dishes. Highly recommended!"</p>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+        </div>
+
+        <div class="testimonial-card">
+            <h3>Amit Roy</h3>
+            <p>"One of the best restaurants in the city. Great experience!"</p>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+        </div>
+
+    </div>
+
+</section>
+<section id="contact" class="contact hidden">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Royal Spice Restaurant</h3>
+
+            <p>📍 Kolkata, West Bengal</p>
+
+            <p>📞 +91 9876543210</p>
+
+            <p>✉️ royalspice@email.com</p>
+
+            <p>🕒 Open: 10:00 AM - 11:00 PM</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+            <input type="text" id="name" placeholder="Your Name">
+
+            <input type="email" id="email" placeholder="Your Email">
+
+            <textarea id="message" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    <div class="map">
+
+    <iframe
+        src="https://www.google.com/maps?q=Police+Para+Toto+Stand+Kolkata&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+    </div>
+
+</section>
+<footer class="hidden">
+
+    <h2>Royal Spice Restaurant</h2>
+
+    <p>Serving Happiness Since 2026</p>
+
+    <div class="social-links">
+
+        <a href="#">Facebook</a>
+
+        <a href="#">Instagram</a>
+
+        <a href="#">Twitter</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Royal Spice Restaurant. All Rights Reserved.
+    </p>
+
+</footer>
+<button id="topBtn" title="Go to Top">↑</button>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

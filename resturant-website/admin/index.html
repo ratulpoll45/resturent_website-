@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard">
+
+    <h1>Restaurant Admin Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Bookings</h2>
+            <p id="bookingCount">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Contacts</h2>
+            <p id="contactCount">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Menu Items</h2>
+            <p id="menuCount">0</p>
+        </div>
+
+    </div>
+
+    <h2>Recent Bookings</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Guests</th>
+            </tr>
+        </thead>
+
+        <tbody id="bookingTable">
+
+        </tbody>
+
+    </table>
+    <h2>Recent Contacts</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+
+    <tbody id="contactTable">
+
+    </tbody>
+</table>
+<br><br>
+
+<h2>Menu Management</h2>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Food Name</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="menuTable">
+
+    </tbody>
+
+</table>
+
+<br><br>
+
+<h2>Add New Food</h2>
+<form id="menuForm">
+
+    <input
+        type="text"
+        id="foodName"
+        placeholder="Food Name"
+        required
+    >
+
+    <input
+        type="text"
+        id="foodDescription"
+        placeholder="Description"
+        required
+    >
+
+    <input
+        type="text"
+        id="foodCategory"
+        placeholder="Category"
+        required
+    >
+
+    <input
+        type="number"
+        id="foodPrice"
+        placeholder="Price"
+        required
+    >
+
+    <input
+        type="text"
+        id="foodImage"
+        placeholder="Image URL"
+        required
+    >
+
+    <button type="submit">
+        Add Food
+    </button>
+
+</form>
+
+<h2>Edit Food</h2>
+
+<form id="editMenuForm" style="display:none;">
+
+    <input type="hidden" id="editId">
+
+    <input
+        type="text"
+        id="editName"
+        placeholder="Food Name"
+        required
+    >
+
+    <input
+        type="number"
+        id="editPrice"
+        placeholder="Price"
+        required
+    >
+
+    <button type="submit">
+        Update Food
+    </button>
+
+</form>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
