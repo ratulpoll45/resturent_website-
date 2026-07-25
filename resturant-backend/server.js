@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.use("/api/menu", menuRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/booking", bookingRoutes);
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:$3000`);
