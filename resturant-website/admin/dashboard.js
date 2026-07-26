@@ -6,7 +6,7 @@ async function loadBookings() {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/booking");
+        const response = await fetch("https://resturent-website-sv01.onrender.com/api/booking");
         const result = await response.json();
 
         const bookings = result.data;
@@ -49,7 +49,7 @@ async function loadContacts() {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/contact");
+        const response = await fetch("https://resturent-website-sv01.onrender.com/api/contact");
         const result = await response.json();
 
         const contacts = result.data;
@@ -89,7 +89,7 @@ async function loadMenu() {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/menu");
+        const response = await fetch("https://resturent-website-sv01.onrender.com/api/menu");
 
         const menu = await response.json();
 
@@ -146,7 +146,7 @@ menuForm.addEventListener("submit", async (e) => {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/menu", {
+        const response = await fetch("https://resturent-website-sv01.onrender.com/api/menu", {
 
             method: "POST",
 
@@ -198,7 +198,7 @@ async function deleteMenu(id) {
 
     if (!confirm("Delete this food?")) return;
 
-    const response = await fetch(`http://localhost:3000/api/menu/${id}`, {
+    const response = await fetch(`https://resturent-website-sv01.onrender.com/api/menu/${id}`, {
 
         method: "DELETE"
 
@@ -252,7 +252,7 @@ editForm.addEventListener("submit", async (e) => {
     name,
     price
     });
-    const response = await fetch(`http://localhost:3000/api/menu/${id}`, {
+    const response = await fetch(`https://resturent-website-sv01.onrender.com/api/menu/${id}`, {
 
         method: "PUT",
 

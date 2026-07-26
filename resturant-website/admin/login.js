@@ -2,7 +2,7 @@ async function loadBookings() {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/booking");
+        const response = await fetch("https://resturent-website-sv01.onrender.com/api/booking");
 
         const result = await response.json();
 

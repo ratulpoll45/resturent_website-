@@ -66,7 +66,7 @@ contactForm.addEventListener("submit", async function (event) {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/contact", {
+        const response = await fetch("https://resturent-website-sv01.onrender.com/api/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -116,7 +116,7 @@ if (bookingForm) {
 
         try {
 
-            const response = await fetch("http://localhost:3000/api/booking", {
+            const response = await fetch("https://resturent-website-sv01.onrender.com/api/booking", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -168,7 +168,7 @@ async function loadMenu() {
 
     try {
 
-        const response = await fetch("http://localhost:3000/api/menu");
+        const response = await fetch("https://resturent-website-sv01.onrender.com/api/menu");
 
         const menu = await response.json();
 
